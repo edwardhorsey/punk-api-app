@@ -1,0 +1,31 @@
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 450px;
+  max-width: 45%;
+  background-color: rgba(176, 196, 222, 0.322);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px;
+  
+  img {
+    margin: 10px;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  div {
+    margin: 10px;
+
+    p {
+      padding: 5px;
+      font-size: 0.9em;
+
+     &.description {
+       font-style: italic;
+     } 
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.navBar {
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+  input {
+    margin: 10px;
+    padding: 10px;
+  
+    &.search {
+    margin-bottom: 50px;
+    }
+  }
+
+
+}
