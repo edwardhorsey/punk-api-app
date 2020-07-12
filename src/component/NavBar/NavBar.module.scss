@@ -1,15 +1,28 @@
 .navBar {
-  background-color: lightskyblue;
+  background-color: rgb(152, 187, 231);
   display: flex;
   flex-direction: column;
   height: 100vh;
   
+  img {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  p {
+    padding-top: 15px;
+    font-style: italic;
+    margin: 0 auto;
+
+  }
+
   input {
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
   
     &.search {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+    width: 220px;
     }
   }
 
