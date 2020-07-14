@@ -16,14 +16,7 @@ export default class App extends Component {
       this.fetchDataFromBD();
     }
   
-  handleChange = (value) => this.fetchDataFromBD(this.getUrl(value))
-
-  // dataForCard = (beers) => { 
-  //   console.log(beers);
-  //   return beers.map(beer => {
-  //     return (({ id, name, description, image_url, abv, first_brewed, ph }) => ({ id, name, description, image_url, abv, first_brewed, ph }))(beer)
-  //   });
-  // }
+  handleChange = value => this.fetchDataFromBD(value);
 
   get filters() {
     return filtersAPI.map(obj => {
@@ -53,10 +46,10 @@ export default class App extends Component {
     const mainDisplay = this.dataToDisplay()
 
     return (
-      <div className={styles.body}>
+      <main className={styles.body}>
         <NavBar filters={this.filters} search={this.handleChange}/>
         {mainDisplay}
-      </div>
+      </main>
     )
   }
 }
