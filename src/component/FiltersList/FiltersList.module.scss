@@ -1,8 +1,10 @@
-@media only screen and (max-width: 800px) {
-  ul {
-    display: flex;
-    li {
+.filtersList {
+  @media only screen and (max-width: 800px) {
+    ul {
       display: flex;
+      li {
+        display: flex;
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ import styles from './Filter.module.scss';
 class Filter extends Component {
   state = {  }
   render() { 
-    return <li>{this.props.label}<input type="checkbox" onChange={this.props.logic}/></li>
+    return <li className={styles.filter}>{this.props.label}<input type="checkbox" onChange={this.props.logic}/></li>
   }
 }
  

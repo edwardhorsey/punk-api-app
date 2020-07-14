@@ -9,7 +9,7 @@ class FiltersList extends Component {
   renderFilters = array => array.map(({ name, fn }, index) => <Filter label={name} logic={fn} key={index}/>)
 
   render() {
-    return <ul>{this.renderFilters(this.props.filters)}</ul>;
+    return <ul className={styles.filtersList}>{this.renderFilters(this.props.filters)}</ul>;
   }
 }
  
