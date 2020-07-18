@@ -21,8 +21,8 @@ export default class App extends Component {
   get filters() {
     return filtersAPI.map(obj => {
       obj['fn'] =  (() => {
-        this.setState({ [obj.state]: !this.state[obj.state]});
-        setTimeout(this.fetchDataFromBD, 100)
+        this.setState({ [obj.state]: !this.state[obj.state]})
+        setTimeout(this.fetchDataFromBD, 80)
       });
       return obj
     });

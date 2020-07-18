@@ -4,7 +4,10 @@
   flex-direction: row;
   justify-content: space-evenly;
   min-width: 450px;
-  max-width: 45%;
+  max-width: 90%;
+  @media only screen and (min-width: 1330px) {
+    max-width: 45%;
+  }
   background-color: rgba(168, 194, 228, 0.96);
   padding: 10px;
   border-radius: 10px;
@@ -12,8 +15,8 @@
   
   img {
     margin: 10px;
-    max-width: 300px;
-    max-height: 350px;
+    max-width: 270px;
+    max-height: 325px;
   }
 
   div {
