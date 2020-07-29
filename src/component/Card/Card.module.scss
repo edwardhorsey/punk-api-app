@@ -5,27 +5,25 @@
   justify-content: space-evenly;
   min-width: 450px;
   max-width: 90%;
+  background-color: rgba(168, 194, 228, 0.96);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px;
+  img {
+    margin: 10px;
+    max-width: 270px;
+    max-height: 325px;
+  }
+
   @media only screen and (min-width: 1330px) {
     max-width: 45%;
   }
 
   @media only screen and (max-width: 800px) {
     min-width: 280px;
-img{
-    height: 200px;
-}
-  }
-
-
-  background-color: rgba(168, 194, 228, 0.96);
-  padding: 10px;
-  border-radius: 10px;
-  margin: 15px;
-  
-  img {
-    margin: 10px;
-    max-width: 270px;
-    max-height: 325px;
+    img {
+      height: 200px;
+    }
   }
 
   div {

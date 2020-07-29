@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styles from './App.module.scss';
-
 import { filtersAPI } from './data/filters.js';
-
 import NavBar from './component/NavBar';
 import Main from './component/Main';
 
@@ -12,9 +10,9 @@ export default class App extends Component {
     beers: []
   }
   
-    componentDidMount() {
-      this.fetchDataFromBD();
-    }
+  componentDidMount() {
+    this.fetchDataFromBD();
+  }
   
   handleChange = value => this.fetchDataFromBD(value);
 
@@ -32,10 +30,9 @@ export default class App extends Component {
     let filters = filtersAPI.map(filter => this.state[filter.state] ? filter.filterUrl : '').join('');
     let base = 'https://api.punkapi.com/v2/beers?' + filters;
     let url = !value ? base : base + '&beer_name=' + value;
-    console.log(url)
     fetch(url)
       .then(data => data.json())
-      .then(json => {console.log(json); this.setState({ beers: json, hello: 'ed' }); console.log('after download json data')})
+      .then(json => this.setState({ beers: json }))
       .catch(error => console.log(error))
   }
 
