@@ -7,20 +7,24 @@ import Main from './component/Main';
 export default class App extends Component {
   
   state = {
-    beers: []
+    beers: [],
   }
   
   componentDidMount() {
+    filtersAPI.forEach(filter => this.setState({ [filter.state]: false }))
     this.fetchDataFromBD();
   }
   
-  handleChange = value => this.fetchDataFromBD(value);
+  handleChange = value => {
+    this.setState({ value });
+    this.fetchDataFromBD(value);
+  };
 
   get filters() {
     return filtersAPI.map(obj => {
       obj['fn'] =  (() => {
-        this.setState({ [obj.state]: !this.state[obj.state]})
-        setTimeout(this.fetchDataFromBD, 80)
+        this.setState({ [obj.state]: !this.state[obj.state]});
+        setTimeout(() => {this.fetchDataFromBD(this.state.value)}, 150);
       });
       return obj
     });

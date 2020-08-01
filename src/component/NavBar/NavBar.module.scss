@@ -9,6 +9,7 @@
     img {
       width: 80%;
       padding-top: 10px;
+      max-width: 250px;
     }
     p {
       padding-top: 15px;
@@ -88,7 +89,7 @@
         list-style-type: none;
         &.search {
           height: 35px;
-          width: 220px;
+          width: 180px;
         }
       }
     }
