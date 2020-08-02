@@ -1,3 +1,7 @@
 # Punk Api Beer Reader 
 
-A website which searches and filters results from the Brewdog Punk API.
+A web app built for searching for information on Brewdog's catalogue, pulled from the Brewdog Punk API.
+
+You can search for a beer and filter your results further too.
+
+Happy browsing 🍺!
